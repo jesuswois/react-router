@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.dropdown-title{
+    background-color: beige;
+    padding: 0px 25px;
+    z-index: 2;
+}
+.dropdown{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    list-style:none;
+    padding:0;
+}
+.dropdown-title:hover .dropdown{
+    animation:slide-in 0.3s ease-in-out both;
+    display:block;
+}
+@keyframes slide-in{
+    from{
+        translate: 0px -100px;
+    }
+}

@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import FirstLink from './screens/FirstLink';
+import SecondLink from './screens/SecondLink';
+import ThirdLink from './screens/ThirdLink';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +15,9 @@ root.render(
       <Navbar/>
       <Routes>
         <Route path='/' element ={<App/>}/>
+        <Route path='/first' element ={<FirstLink/>}/>
+        <Route path='/second' element ={<SecondLink/>}/>
+        <Route path='/third' element ={<ThirdLink/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
